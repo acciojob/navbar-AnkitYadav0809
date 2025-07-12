@@ -1,1 +1,11 @@
 /*  your css code here. If applicable */
+nav{
+	background-color:#6e072d;
+	color:white;
+}
+li:hover{
+	background-color:#b90e4d;
+}
+ul{
+	
+}
