@@ -1,11 +1,35 @@
-/*  your css code here. If applicable */
-nav{
-	background-color:#6e072d;
-	color:white;
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #6e072d;
+    color: white;
+    padding: 10px; /* Optional for spacing */
 }
-li:hover{
-	background-color:#b90e4d;
+
+ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    display: flex; /* Display items in a row */
 }
-ul{
-	
+
+.left-nav li, .right-nav li {
+    padding: 18px 27px; /* Vertical padding = font size, Horizontal padding = font size * 1.5 */
+    border-right: 2px solid white; /* Add right border */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Remove right border for the last item in the left nav */
+.left-nav li:last-child {
+    border-right: none;
+}
+
+/* Remove left border for the first item in the right nav */
+.right-nav li:first-child {
+    border-left: none;
+}
+
+/* Hover effect */
+.left-nav li:hover, .right-nav li:hover {
+    background-color: #b90e4d; /* Change background on hover */
 }
